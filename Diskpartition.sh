@@ -18,7 +18,7 @@ partition() {
             usage
             partition
         fi
-        ;;
+    ;;
     2)
         echo "Copy the path to the disk and paste it here : "
         read path
@@ -40,13 +40,13 @@ partition() {
                 sudo fdisk $path
             fi
         fi
-        ;;
+    ;;
     3)
         exit
-        ;;
+    ;;
     *)
         usage
-        ;;
+    ;;
     esac
 
 }
