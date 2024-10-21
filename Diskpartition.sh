@@ -24,7 +24,7 @@ partition() {
         read path
         
         if [ ! -d $path ]; then
-            if [[ "$path" =~ ^/ ]]; then
+            if [[ "$path" =~ ^/ ]]; then #This statment means if i find something in the home directory that starts with / , then i should go to the root directory and look for the path before patitioning it.
                 cd /
                 sudo fdisk $path
             fi
